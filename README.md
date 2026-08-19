@@ -11,7 +11,7 @@ The page works in **Spanish and English**. Visitors change the language with one
 
 A public web page with six sections:
 
-| Section | What goes there |
+| Section | What goes there                                                                               |
 |---|---|
 | Home | My nameis Laura Daniela Mendoza castro, my role is a student| my is links Lmendoza@itfip.edu.co| 
 | About | Two or three sentences about you |
