@@ -13,7 +13,7 @@ A public web page with six sections:
 
 | Section | What goes there |
 |---|---|
-| Home | My nameis Laura Daniela Mendoza castro, my role| your links | 
+| Home | My nameis Laura Daniela Mendoza castro, my role ir a student| your links | 
 | About | Two or three sentences about you |
 | Skills | Your technical and professional skills |
 | Resume | Your education and your experience |
