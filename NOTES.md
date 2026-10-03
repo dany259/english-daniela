@@ -1,7 +1,7 @@
 # Translation Notes
 
-**Student:** [Your name]
-**Course:** [Inglés I / Inglés II]
+**Student:** Laura Daniela Mendoza Castro
+**Course:** [Inglés II]
 **Date:** [dd/mm/yyyy]
 
 ---
