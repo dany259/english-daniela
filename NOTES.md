@@ -2,7 +2,7 @@
 
 **Student:** Laura Daniela Mendoza Castro
 **Course:** [Inglés II]
-**Date:** [dd/mm/yyyy]
+**Date:** [2/10/2026]
 
 ---
 
