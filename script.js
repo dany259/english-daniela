@@ -57,13 +57,15 @@ const ES = {
 
   "edu.1.title": "Técnico Profesional en Programación Web",
   "edu.1.text":  "Estoy aprendiendo a crear páginas web con HTML y CSS, añadir interactividad con JavaScript y trabajar con bases de datos como MySQL. También practico Git y GitHub para organizar cambios y colaborar en proyectos, mientras fortalezco mi lógica de programación y mi capacidad para resolver problemas.",
-  "edu.2.title": "[Curso o certificación]",
-  "edu.2.text":  "[Qué aprendiste y para qué te sirve.]",
 
-  "exp.1.title": "[Rol o tipo de proyecto]",
-  "exp.1.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
-  "exp.2.title": "[Rol o tipo de proyecto]",
-  "exp.2.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
+  "edu.2.title": "Aprendizaje de herramientas de desarrollo",
+  "edu.2.text":  "Estoy fortaleciendo mis conocimientos sobre la estructura de una página web, los estilos visuales y el control de versiones. Mi objetivo es aplicar estas herramientas para desarrollar proyectos organizados y fáciles de utilizar.",
+
+  "exp.1.title": "Construcción de mi portafolio web",
+  "exp.1.text":  "Estoy adaptando una plantilla de portafolio con HTML, CSS y JavaScript para presentar mi perfil, formación y habilidades en español e inglés. Personalizo los contenidos y los porcentajes de habilidades.",
+
+  "exp.2.title": "Gestión de cambios de mi portafolio",
+  "exp.2.text":  "Utilizo GitHub para editar los archivos de mi portafolio y guardar los cambios. Esta práctica me ayuda a familiarizarme con el control de versiones y la organización de un proyecto web.",
 
   "portfolio.title": "Proyectos",
   "project.1.title": "[Nombre del proyecto]",
@@ -84,11 +86,6 @@ const ES = {
 
 /* ------------------------------------------------------------
    2. ENGLISH TEXTS
-
-   Before writing this section, remember:
-   - Use action verbs: built, configured, fixed, tested, supported.
-   - Do not include age, marital status or a home address.
-   - Do not translate word by word. Rewrite.
    ------------------------------------------------------------ */
 const EN = {
   "nav.home":      "HOME",
@@ -131,13 +128,15 @@ const EN = {
 
   "edu.1.title": "Professional Technician in Web Programming",
   "edu.1.text":  "I am learning to build web pages with HTML and CSS, add interactivity with JavaScript, and work with databases such as MySQL. I also practice Git and GitHub to organize changes and collaborate on projects while developing my programming and problem-solving skills.",
-  "edu.2.title": "[Course or certificate]",
-  "edu.2.text":  "[What you learned and how you use it.]",
 
-  "exp.1.title": "[Role or type of project]",
-  "exp.1.text":  "[What you did, which tools you used, and what the result was.]",
-  "exp.2.title": "[Role or type of project]",
-  "exp.2.text":  "[What you did, which tools you used, and what the result was.]",
+  "edu.2.title": "Learning development tools",
+  "edu.2.text":  "I am improving my understanding of web page structure, visual styles, and version control. My goal is to use these tools to develop organized, easy-to-use projects.",
+
+  "exp.1.title": "Building my web portfolio",
+  "exp.1.text":  "I am adapting a portfolio template with HTML, CSS, and JavaScript to present my profile, education, and skills in Spanish and English. I customize the content and skill percentages.",
+
+  "exp.2.title": "Managing changes to my portfolio",
+  "exp.2.text":  "I use GitHub to edit my portfolio files and save changes. This practice helps me become familiar with version control and organizing a web project.",
 
   "portfolio.title": "Projects",
   "project.1.title": "[Project name]",
@@ -158,7 +157,6 @@ const EN = {
 
 /* ============================================================
    3. LANGUAGE SWITCHER
-   You do not need to change the code below.
    ============================================================ */
 
 const DICCIONARIOS = { es: ES, en: EN };
@@ -170,6 +168,7 @@ function aplicarIdioma(idioma) {
 
   document.querySelectorAll("[data-i18n]").forEach(elemento => {
     const clave = elemento.getAttribute("data-i18n");
+
     if (textos[clave] !== undefined) {
       elemento.textContent = textos[clave];
     } else {
@@ -180,14 +179,19 @@ function aplicarIdioma(idioma) {
   document.documentElement.lang = idioma;
 
   const boton = document.getElementById("btn-idioma");
+
   if (boton) {
     const otro = idioma === "es" ? "en" : "es";
+
     boton.innerHTML =
-      '<span class="idioma-activo">'   + idioma.toUpperCase() + '</span>' +
+      '<span class="idioma-activo">' + idioma.toUpperCase() + '</span>' +
       '<span class="idioma-sep">/</span>' +
-      '<span class="idioma-inactivo">' + otro.toUpperCase()   + '</span>';
-    boton.setAttribute("aria-label",
-      idioma === "es" ? "Switch to English" : "Cambiar a español");
+      '<span class="idioma-inactivo">' + otro.toUpperCase() + '</span>';
+
+    boton.setAttribute(
+      "aria-label",
+      idioma === "es" ? "Switch to English" : "Cambiar a español"
+    );
   }
 
   idiomaActual = idioma;
@@ -218,10 +222,6 @@ function cerrarMenu() {
 
 /* ============================================================
    5. SKILL BARS
-
-   The width comes from the data-percent attribute in index.html.
-   You can add or remove skills freely: this code does not depend
-   on how many there are.
    ============================================================ */
 
 function animarHabilidades() {
@@ -230,8 +230,12 @@ function animarHabilidades() {
   const mostrar = barra => {
     const porcentaje = barra.getAttribute("data-percent") || "0";
     barra.style.width = porcentaje + "%";
+
     const etiqueta = barra.querySelector("span");
-    if (etiqueta) etiqueta.textContent = porcentaje + "%";
+
+    if (etiqueta) {
+      etiqueta.textContent = porcentaje + "%";
+    }
   };
 
   if (!("IntersectionObserver" in window)) {
