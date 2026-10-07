@@ -1,59 +1,83 @@
 <!DOCTYPE html>
-<!--
-  ============================================================
-  WEB PROFILE TEMPLATE  ·  Técnico Profesional en Programación Web
-  Institución Universitaria de El Espinal - UniEspinal
-  Inglés I / Inglés II
-  ============================================================
-
-  HOW TO USE THIS FILE
-  1. Replace every text inside [square brackets] with your own information.
-  2. Every visible text has a data-i18n attribute. The actual words live in
-     script.js, inside the ES and EN dictionaries. Edit them there.
-  3. Do NOT delete the data-i18n attributes. They connect this file to the
-     language switcher.
-  4. Never add your home address, your phone number or your ID number.
-     A public profile does not need them.
-  ============================================================
--->
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- [Replace with your name] -->
-  <title>Laura Daniela Mendoza Castro ·Web Developer</title>
-  <meta name="description" content=student developer and technical support technician based in Colombia.
+  <title>Laura Daniela Mendoza Castro · Web Developer</title>
+  <meta name="description" content="Estudiante de programación web de UniEspinal, Colombia.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    #portfolio .proyecto.tarjeta-proyecto {
+      display: flex;
+      flex-direction: column;
+      min-height: 260px;
+      padding: 25px;
+      box-sizing: border-box;
+      background: #1e2529;
+      border: 1px solid #00b5b5;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      text-align: left;
+      gap: 15px;
+    }
+
+    #portfolio .tarjeta-proyecto .icono-proyecto {
+      font-size: 42px;
+      color: #00b5b5;
+    }
+
+    #portfolio .tarjeta-proyecto h3 {
+      font-size: 21px;
+      margin: 0;
+    }
+
+    #portfolio .tarjeta-proyecto p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    #portfolio .tarjeta-proyecto .estado-proyecto {
+      margin-top: auto;
+      color: #00b5b5;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    #portfolio a.tarjeta-proyecto:hover {
+      background: #263237;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ========================= HEADER ========================= -->
+  <!-- HEADER -->
   <div class="contenedor-header">
     <header>
       <div class="logo">
-        
         <a href="#inicio">Laura Daniela Mendoza Castro</a>
       </div>
 
       <nav id="nav">
         <ul>
-          <li><a href="#inicio"     data-i18n="nav.home"      onclick="cerrarMenu()">INICIO</a></li>
-          <li><a href="#sobremi"    data-i18n="nav.about"     onclick="cerrarMenu()">SOBRE MÍ</a></li>
-          <li><a href="#skills"     data-i18n="nav.skills"    onclick="cerrarMenu()">SKILLS</a></li>
-          <li><a href="#curriculum" data-i18n="nav.resume"    onclick="cerrarMenu()">FORMACIÓN</a></li>
+          <li><a href="#inicio" data-i18n="nav.home" onclick="cerrarMenu()">INICIO</a></li>
+          <li><a href="#sobremi" data-i18n="nav.about" onclick="cerrarMenu()">SOBRE MÍ</a></li>
+          <li><a href="#skills" data-i18n="nav.skills" onclick="cerrarMenu()">HABILIDADES</a></li>
+          <li><a href="#curriculum" data-i18n="nav.resume" onclick="cerrarMenu()">FORMACIÓN</a></li>
           <li><a href="#portfolio" data-i18n="nav.portfolio" onclick="cerrarMenu()">PROYECTOS</a></li>
-          <li><a href="#contacto"   data-i18n="nav.contact"   onclick="cerrarMenu()">CONTACTO</a></li>
+          <li><a href="#contacto" data-i18n="nav.contact" onclick="cerrarMenu()">CONTACTO</a></li>
         </ul>
       </nav>
 
       <div class="acciones-header">
-        <!-- LANGUAGE SWITCHER -->
         <button id="btn-idioma"
                 class="btn-idioma"
                 type="button"
@@ -69,26 +93,31 @@
     </header>
   </div>
 
-  <!-- ========================= HERO ========================= -->
+  <!-- INICIO -->
   <section id="inicio" class="inicio">
     <div class="contenido-banner">
       <div class="contenedor-img">
-      
         <img src="images/profile.jpg" alt="Profile photo" onerror="this.style.display='none'">
       </div>
 
-            <h1>Laura Daniela Mendoza Castro</h1>
-      <h2 data-i18n="hero.role">Desarrollador Web · Soporte Técnico</h2>
+      <h1>Laura Daniela Mendoza Castro</h1>
+      <h2 data-i18n="hero.role">Desarrolladora Web · Soporte Técnico</h2>
 
       <div class="redes">
-               <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:[your.email@example.com]" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/dany259" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#contacto" aria-label="Contacto">
+          <i class="fa-solid fa-address-card"></i>
+        </a>
+        <a href="mailto:danielacm0317@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ========================= ABOUT ========================= -->
+  <!-- SOBRE MÍ -->
   <section id="sobremi" class="sobremi">
     <div class="contenido-seccion">
       <h2 data-i18n="about.title">Sobre Mí</h2>
@@ -100,10 +129,7 @@
       <div class="fila">
         <div class="col">
           <h3 data-i18n="about.infoTitle">Información</h3>
-          <!--
-            SAFE FIELDS ONLY.
-            Do not add: home address, phone number, ID number, date of birth.
-          -->
+
           <ul class="datos">
             <li>
               <strong data-i18n="about.labelLocation">Ubicación</strong>
@@ -111,7 +137,7 @@
             </li>
             <li>
               <strong data-i18n="about.labelEmail">Correo</strong>
-              <span>[danielacm0317@gmail.com]</span>
+              <span>danielacm0317@gmail.com</span>
             </li>
             <li>
               <strong data-i18n="about.labelLanguages">Idiomas</strong>
@@ -119,15 +145,15 @@
             </li>
             <li>
               <strong data-i18n="about.labelStatus">Disponibilidad</strong>
-              <span class="destacado" data-i18n="about.valueStatus">Abierto a prácticas</span>
+              <span class="destacado" data-i18n="about.valueStatus">Abierta a prácticas</span>
             </li>
           </ul>
         </div>
 
         <div class="col">
           <h3 data-i18n="about.interestsTitle">Intereses</h3>
+
           <div class="contenedor-intereses">
-            <!-- [Change icons and labels. Keep between 4 and 6.] -->
             <div class="interes">
               <i class="fa-solid fa-code"></i>
               <span data-i18n="interest.1">CÓDIGO</span>
@@ -150,12 +176,7 @@
     </div>
   </section>
 
- <!-- ========================= SKILLS ========================= -->
-  <!--
-    To change a skill: edit the label, and edit data-percent.
-    The bar width and the number are both taken from data-percent,
-    so you only change it in ONE place.
-  -->
+  <!-- HABILIDADES -->
   <section id="skills" class="skills">
     <div class="contenido-seccion">
       <h2 data-i18n="skills.title">Habilidades</h2>
@@ -166,19 +187,30 @@
 
           <div class="skill">
             <span class="skill-nombre">HTML &amp; CSS</span>
-            <div class="barra-skill"><div class="progreso" data-percent="10"><span>10%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="10"><span>10%</span></div>
+            </div>
           </div>
+
           <div class="skill">
             <span class="skill-nombre">JavaScript</span>
-            <div class="barra-skill"><div class="progreso" data-percent="10"><span>10%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="10"><span>10%</span></div>
+            </div>
           </div>
+
           <div class="skill">
             <span class="skill-nombre">MySQL</span>
-            <div class="barra-skill"><div class="progreso" data-percent="20"><span>20%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="20"><span>20%</span></div>
+            </div>
           </div>
+
           <div class="skill">
             <span class="skill-nombre">Git &amp; GitHub</span>
-            <div class="barra-skill"><div class="progreso" data-percent="20"><span>20%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="20"><span>20%</span></div>
+            </div>
           </div>
         </div>
 
@@ -187,32 +219,42 @@
 
           <div class="skill">
             <span class="skill-nombre" data-i18n="skill.support">Soporte al usuario</span>
-            <div class="barra-skill"><div class="progreso" data-percent="40"><span>40%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="40"><span>40%</span></div>
+            </div>
           </div>
+
           <div class="skill">
             <span class="skill-nombre" data-i18n="skill.teamwork">Trabajo en equipo</span>
-            <div class="barra-skill"><div class="progreso" data-percent="50"><span>50%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="50"><span>50%</span></div>
+            </div>
           </div>
+
           <div class="skill">
             <span class="skill-nombre" data-i18n="skill.problem">Resolución de problemas</span>
-            <div class="barra-skill"><div class="progreso" data-percent="50"><span>50%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="50"><span>50%</span></div>
+            </div>
           </div>
+
           <div class="skill">
             <span class="skill-nombre" data-i18n="skill.english">Inglés técnico</span>
-            <div class="barra-skill"><div class="progreso" data-percent="20"><span>20%</span></div></div>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="20"><span>20%</span></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========================= RESUME ========================= -->
+  <!-- FORMACIÓN Y EXPERIENCIA -->
   <section id="curriculum" class="curriculum">
     <div class="contenido-seccion">
       <h2 data-i18n="resume.title">Formación y experiencia</h2>
 
       <div class="fila">
-        <!-- EDUCATION -->
         <div class="col izquierda">
           <h3 data-i18n="resume.education">Formación</h3>
 
@@ -225,36 +267,30 @@
           </div>
 
           <div class="item izq">
-            <h4 data-i18n="edu.2.title">Aprendizaje de herramientas de desarrollo</h4>
-            <span class="casa">UniEspinal</span>
+            <h4 data-i18n="edu.2.title">Fundamentos de desarrollo web</h4>
+            <span class="casa" data-i18n="edu.2.institution">UniEspinal · Formación académica</span>
             <span class="fecha">2026</span>
-            <p data-i18n="edu.2.text">Estoy fortaleciendo mis conocimientos sobre la estructura de una página web, los estilos visuales y el control de versiones. Mi objetivo es aplicar estas herramientas para desarrollar proyectos organizados y fáciles de utilizar.</p>
+            <p data-i18n="edu.2.text">Durante mi formación practico la estructura de páginas con HTML, el diseño con CSS y los conceptos básicos de JavaScript. Estoy aprendiendo a organizar contenidos, modificar estilos y revisar errores para mejorar la presentación y el funcionamiento de mis páginas.</p>
             <div class="conectori"><div class="circuloi"></div></div>
           </div>
         </div>
 
-        <!-- EXPERIENCE -->
         <div class="col derecha">
           <h3 data-i18n="resume.experience">Experiencia</h3>
 
-          <!--
-            No work experience yet? That is normal.
-            Use academic projects, volunteer work or freelance jobs.
-            Describe what you DID, using action verbs: built, configured, fixed, tested.
-          -->
           <div class="item der">
-            <h4 data-i18n="exp.1.title">Construcción de mi portafolio web</h4>
-            <span class="casa">Proyecto personal · Portafolio web</span>
+            <h4 data-i18n="exp.1.title">Personalización de un portafolio web</h4>
+            <span class="casa" data-i18n="exp.1.institution">Proyecto personal · Portafolio web</span>
             <span class="fecha">2026</span>
-            <p data-i18n="exp.1.text">Estoy adaptando una plantilla de portafolio con HTML, CSS y JavaScript para presentar mi perfil, formación y habilidades en español e inglés. Personalizo los contenidos y los porcentajes de habilidades.</p>
+            <p data-i18n="exp.1.text">Adapté una plantilla con HTML, CSS y JavaScript para presentar mi perfil académico. Organicé las secciones de información, habilidades y formación, personalicé los textos y ajusté los porcentajes de las barras. También trabajé en los contenidos en español e inglés.</p>
             <div class="conectord"><div class="circulod"></div></div>
           </div>
 
           <div class="item der">
-            <h4 data-i18n="exp.2.title">Gestión de cambios de mi portafolio</h4>
-            <span class="casa">Proyecto personal · Portafolio web</span>
+            <h4 data-i18n="exp.2.title">Actualización de contenidos con GitHub</h4>
+            <span class="casa" data-i18n="exp.2.institution">Proyecto personal · Portafolio web</span>
             <span class="fecha">2026</span>
-            <p data-i18n="exp.2.text">Utilizo GitHub para editar los archivos de mi portafolio y guardar los cambios. Esta práctica me ayuda a familiarizarme con el control de versiones y la organización de un proyecto web.</p>
+            <p data-i18n="exp.2.text">Utilicé GitHub para editar los archivos HTML y JavaScript de mi portafolio y guardar las modificaciones. Revisé los cambios en los textos y aprendí a mantener actualizada la información del proyecto mediante mensajes de confirmación.</p>
             <div class="conectord"><div class="circulod"></div></div>
           </div>
         </div>
@@ -262,85 +298,78 @@
     </div>
   </section>
 
-  <!-- ========================= PORTFOLIO ========================= -->
-  <!--
-    This is the most important section for a junior developer.
-    Three finished small projects are better than ten unfinished ones.
-    Every card should link to the live project or to its repository.
-  -->
+  <!-- PROYECTOS -->
   <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
       <h2 data-i18n="portfolio.title">Proyectos</h2>
 
       <div class="galeria">
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-1.png" alt="Project 1" onerror="this.style.opacity=0">
-          <div class="overlay">
-            <h3 data-i18n="project.1.title">[Nombre del proyecto]</h3>
-            <p data-i18n="project.1.text">[Tecnologías usadas]</p>
-          </div>
+        <a class="proyecto tarjeta-proyecto"
+           href="https://github.com/dany259/english-daniela"
+           target="_blank"
+           rel="noopener">
+          <i class="fa-solid fa-laptop-code icono-proyecto" aria-hidden="true"></i>
+          <h3 data-i18n="project.1.title">Mi portafolio web</h3>
+          <p data-i18n="project.1.text">Perfil personal en español e inglés con información sobre mi formación, habilidades y experiencia. Desarrollado a partir de una plantilla con HTML, CSS y JavaScript.</p>
+          <span class="estado-proyecto" data-i18n="project.1.status">Ver repositorio en GitHub →</span>
         </a>
 
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-2.png" alt="Project 2" onerror="this.style.opacity=0">
-          <div class="overlay">
-            <h3 data-i18n="project.2.title">[Nombre del proyecto]</h3>
-            <p data-i18n="project.2.text">[Tecnologías usadas]</p>
-          </div>
-        </a>
+        <div class="proyecto tarjeta-proyecto">
+          <i class="fa-solid fa-list-check icono-proyecto" aria-hidden="true"></i>
+          <h3 data-i18n="project.2.title">Lista de tareas</h3>
+          <p data-i18n="project.2.text">Propuesta de práctica con HTML, CSS y JavaScript para agregar tareas, marcarlas como completadas y eliminarlas. Mi objetivo es practicar eventos y cambios en la página.</p>
+          <span class="estado-proyecto" data-i18n="project.2.status">Próximo proyecto de práctica</span>
+        </div>
 
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-3.png" alt="Project 3" onerror="this.style.opacity=0">
-          <div class="overlay">
-            <h3 data-i18n="project.3.title">[Nombre del proyecto]</h3>
-            <p data-i18n="project.3.text">[Tecnologías usadas]</p>
-          </div>
-        </a>
+        <div class="proyecto tarjeta-proyecto">
+          <i class="fa-solid fa-database icono-proyecto" aria-hidden="true"></i>
+          <h3 data-i18n="project.3.title">Registro de estudiantes</h3>
+          <p data-i18n="project.3.text">Propuesta de práctica para diseñar una base de datos con MySQL y realizar consultas sobre registros de estudiantes. Mi objetivo es aprender a organizar y consultar información.</p>
+          <span class="estado-proyecto" data-i18n="project.3.status">Próximo proyecto de práctica</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ========================= CONTACT ========================= -->
-  <!--
-    A contact form needs a server to work. This template uses direct links
-    instead, so nothing here is decorative: every button really does something.
-  -->
+  <!-- CONTACTO -->
   <section id="contacto" class="contacto">
     <div class="contenido-seccion">
       <h2 data-i18n="contact.title">Contacto</h2>
+
       <p class="contacto-intro" data-i18n="contact.intro">
-        [Una frase invitando a escribirte.]
+        Me interesa aprender, colaborar en proyectos y encontrar oportunidades de prácticas. Puedes escribirme por correo o conocer mi trabajo en GitHub.
       </p>
 
       <div class="tarjetas-contacto">
-        <a class="tarjeta" href="mailto:[your.email@example.com]">
+        <a class="tarjeta" href="mailto:danielacm0317@gmail.com">
           <i class="fa-solid fa-envelope"></i>
           <strong data-i18n="contact.emailLabel">Correo</strong>
-          <span>[</span>
+          <span>danielacm0317@gmail.com</span>
         </a>
 
-        <a class="tarjeta" href="#" target="_blank" rel="noopener">
+        <a class="tarjeta" href="https://github.com/dany259" target="_blank" rel="noopener">
           <i class="fa-brands fa-github"></i>
           <strong>GitHub</strong>
-          <span>[github.com/tu-usuario]</span>
+          <span>github.com/dany259</span>
         </a>
 
-        <a class="tarjeta" href="#" target="_blank" rel="noopener">
-          <i class="fa-brands fa-linkedin-in"></i>
-          <strong>LinkedIn</strong>
-          <span data-i18n="contact.linkedinValue">[Tu perfil profesional]</span>
+        <a class="tarjeta" href="https://github.com/dany259/english-daniela" target="_blank" rel="noopener">
+          <i class="fa-solid fa-code"></i>
+          <strong data-i18n="contact.repositoryLabel">Portafolio</strong>
+          <span data-i18n="contact.repositoryValue">Consulta el código de mi página</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ========================= FOOTER ========================= -->
+  <!-- FOOTER -->
   <footer>
     <a href="#inicio" class="arriba" aria-label="Back to top">
       <i class="fa-solid fa-angles-up"></i>
     </a>
+
     <p class="footer-nota" data-i18n="footer.note">
-    Laura Daniela Mendoza Castro · Técnico Profesional en Programación Web · UniEspinal
+      Laura Daniela Mendoza Castro · Técnico Profesional en Programación Web · UniEspinal
     </p>
   </footer>
 
