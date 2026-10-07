@@ -13,29 +13,28 @@
    ============================================================ */
 
 
-/* ------------------------------------------------------------
-   1. SPANISH TEXTS
-   ------------------------------------------------------------ */
+/* TEXTOS EN ESPAÑOL */
+
 const ES = {
-  "nav.home":      "INICIO",
-  "nav.about":     "SOBRE MÍ",
-  "nav.skills":    "HABILIDADES",
-  "nav.resume":    "FORMACIÓN",
+  "nav.home": "INICIO",
+  "nav.about": "SOBRE MÍ",
+  "nav.skills": "HABILIDADES",
+  "nav.resume": "FORMACIÓN",
   "nav.portfolio": "PROYECTOS",
-  "nav.contact":   "CONTACTO",
+  "nav.contact": "CONTACTO",
 
-  "hero.role": "Desarrollador Web · Soporte Técnico",
+  "hero.role": "Desarrolladora Web · Soporte Técnico",
 
-  "about.title":          "Sobre Mí",
-  "about.text":           "Soy Laura Daniela Mendoza Castro, estudiante del programa Técnico Profesional en Programación Web de UniEspinal. Me apasiona descubrir cómo una idea puede convertirse en una experiencia digital útil para otras personas. Cada tema nuevo me motiva a practicar, afrontar retos y seguir creciendo en proyectos donde pueda aportar y aprender de quienes comparten mi interés por la tecnología.",
-  "about.infoTitle":      "Información",
-  "about.labelLocation":  "Ubicación",
-  "about.valueLocation":  "El Espinal, Tolima, Colombia",
-  "about.labelEmail":     "Correo",
+  "about.title": "Sobre Mí",
+  "about.text": "Soy Laura Daniela Mendoza Castro, estudiante del programa Técnico Profesional en Programación Web de UniEspinal. Me apasiona descubrir cómo una idea puede convertirse en una experiencia digital útil para otras personas. Cada tema nuevo me motiva a practicar, afrontar retos y seguir creciendo en proyectos donde pueda aportar y aprender de quienes comparten mi interés por la tecnología.",
+  "about.infoTitle": "Información",
+  "about.labelLocation": "Ubicación",
+  "about.valueLocation": "El Espinal, Tolima, Colombia",
+  "about.labelEmail": "Correo",
   "about.labelLanguages": "Idiomas",
   "about.valueLanguages": "Español (nativo) · Inglés (A1)",
-  "about.labelStatus":    "Disponibilidad",
-  "about.valueStatus":    "Abierto a prácticas",
+  "about.labelStatus": "Disponibilidad",
+  "about.valueStatus": "Abierta a prácticas",
   "about.interestsTitle": "Intereses",
 
   "interest.1": "CÓDIGO",
@@ -43,70 +42,79 @@ const ES = {
   "interest.3": "LECTURA",
   "interest.4": "JUEGOS",
 
-  "skills.title":        "Habilidades",
-  "skills.technical":    "Habilidades técnicas",
+  "skills.title": "Habilidades",
+  "skills.technical": "Habilidades técnicas",
   "skills.professional": "Habilidades profesionales",
-  "skill.support":       "Soporte al usuario",
-  "skill.teamwork":      "Trabajo en equipo",
-  "skill.problem":       "Resolución de problemas",
-  "skill.english":       "Inglés técnico",
+  "skill.support": "Soporte al usuario",
+  "skill.teamwork": "Trabajo en equipo",
+  "skill.problem": "Resolución de problemas",
+  "skill.english": "Inglés técnico",
 
-  "resume.title":      "Formación y experiencia",
-  "resume.education":  "Formación",
+  "resume.title": "Formación y experiencia",
+  "resume.education": "Formación",
   "resume.experience": "Experiencia",
 
   "edu.1.title": "Técnico Profesional en Programación Web",
-  "edu.1.text":  "Estoy aprendiendo a crear páginas web con HTML y CSS, añadir interactividad con JavaScript y trabajar con bases de datos como MySQL. También practico Git y GitHub para organizar cambios y colaborar en proyectos, mientras fortalezco mi lógica de programación y mi capacidad para resolver problemas.",
+  "edu.1.text": "Estoy aprendiendo a crear páginas web con HTML y CSS, añadir interactividad con JavaScript y trabajar con bases de datos como MySQL. También practico Git y GitHub para organizar cambios y colaborar en proyectos, mientras fortalezco mi lógica de programación y mi capacidad para resolver problemas.",
 
-  "edu.2.title": "Aprendizaje de herramientas de desarrollo",
-  "edu.2.text":  "Estoy fortaleciendo mis conocimientos sobre la estructura de una página web, los estilos visuales y el control de versiones. Mi objetivo es aplicar estas herramientas para desarrollar proyectos organizados y fáciles de utilizar.",
+  "edu.2.title": "Fundamentos de desarrollo web",
+  "edu.2.institution": "UniEspinal · Formación académica",
+  "edu.2.text": "Durante mi formación practico la estructura de páginas con HTML, el diseño con CSS y los conceptos básicos de JavaScript. Estoy aprendiendo a organizar contenidos, modificar estilos y revisar errores para mejorar la presentación y el funcionamiento de mis páginas.",
 
-  "exp.1.title": "Construcción de mi portafolio web",
-  "exp.1.text":  "Estoy adaptando una plantilla de portafolio con HTML, CSS y JavaScript para presentar mi perfil, formación y habilidades en español e inglés. Personalizo los contenidos y los porcentajes de habilidades.",
+  "exp.1.title": "Personalización de un portafolio web",
+  "exp.1.institution": "Proyecto personal · Portafolio web",
+  "exp.1.text": "Adapté una plantilla con HTML, CSS y JavaScript para presentar mi perfil académico. Organicé las secciones de información, habilidades y formación, personalicé los textos y ajusté los porcentajes de las barras. También trabajé en los contenidos en español e inglés.",
 
-  "exp.2.title": "Gestión de cambios de mi portafolio",
-  "exp.2.text":  "Utilizo GitHub para editar los archivos de mi portafolio y guardar los cambios. Esta práctica me ayuda a familiarizarme con el control de versiones y la organización de un proyecto web.",
+  "exp.2.title": "Actualización de contenidos con GitHub",
+  "exp.2.institution": "Proyecto personal · Portafolio web",
+  "exp.2.text": "Utilicé GitHub para editar los archivos HTML y JavaScript de mi portafolio y guardar las modificaciones. Revisé los cambios en los textos y aprendí a mantener actualizada la información del proyecto mediante mensajes de confirmación.",
 
   "portfolio.title": "Proyectos",
-  "project.1.title": "[Nombre del proyecto]",
-  "project.1.text":  "[Tecnologías usadas]",
-  "project.2.title": "[Nombre del proyecto]",
-  "project.2.text":  "[Tecnologías usadas]",
-  "project.3.title": "[Nombre del proyecto]",
-  "project.3.text":  "[Tecnologías usadas]",
 
-  "contact.title":         "Contacto",
-  "contact.intro":         "[Una frase invitando a escribirte. Por ejemplo: ¿Tienes un proyecto o una vacante? Escríbeme.]",
-  "contact.emailLabel":    "Correo",
-  "contact.linkedinValue": "[Tu perfil profesional]",
+  "project.1.title": "Mi portafolio web",
+  "project.1.text": "Perfil personal en español e inglés con información sobre mi formación, habilidades y experiencia. Desarrollado a partir de una plantilla con HTML, CSS y JavaScript.",
+  "project.1.status": "Ver repositorio en GitHub →",
 
-  "footer.note": "[Tu nombre] · Técnico Profesional en Programación Web · UniEspinal"
+  "project.2.title": "Lista de tareas",
+  "project.2.text": "Propuesta de práctica con HTML, CSS y JavaScript para agregar tareas, marcarlas como completadas y eliminarlas. Mi objetivo es practicar eventos y cambios en la página.",
+  "project.2.status": "Próximo proyecto de práctica",
+
+  "project.3.title": "Registro de estudiantes",
+  "project.3.text": "Propuesta de práctica para diseñar una base de datos con MySQL y realizar consultas sobre registros de estudiantes. Mi objetivo es aprender a organizar y consultar información.",
+  "project.3.status": "Próximo proyecto de práctica",
+
+  "contact.title": "Contacto",
+  "contact.intro": "Me interesa aprender, colaborar en proyectos y encontrar oportunidades de prácticas. Puedes escribirme por correo o conocer mi trabajo en GitHub.",
+  "contact.emailLabel": "Correo",
+  "contact.repositoryLabel": "Portafolio",
+  "contact.repositoryValue": "Consulta el código de mi página",
+
+  "footer.note": "Laura Daniela Mendoza Castro · Técnico Profesional en Programación Web · UniEspinal"
 };
 
 
-/* ------------------------------------------------------------
-   2. ENGLISH TEXTS
-   ------------------------------------------------------------ */
+/* TEXTOS EN INGLÉS */
+
 const EN = {
-  "nav.home":      "HOME",
-  "nav.about":     "ABOUT",
-  "nav.skills":    "SKILLS",
-  "nav.resume":    "RESUME",
+  "nav.home": "HOME",
+  "nav.about": "ABOUT",
+  "nav.skills": "SKILLS",
+  "nav.resume": "RESUME",
   "nav.portfolio": "PROJECTS",
-  "nav.contact":   "CONTACT",
+  "nav.contact": "CONTACT",
 
   "hero.role": "Web Developer · Technical Support",
 
-  "about.title":          "About Me",
-  "about.text":           "I am Laura Daniela Mendoza Castro, a Web Programming student at UniEspinal. I am passionate about learning how ideas can become useful websites for other people. Each new topic motivates me to practice, face challenges, and grow through projects where I can contribute and learn from others.",
-  "about.infoTitle":      "Information",
-  "about.labelLocation":  "Location",
-  "about.valueLocation":  "El Espinal, Tolima, Colombia",
-  "about.labelEmail":     "Email",
+  "about.title": "About Me",
+  "about.text": "I am Laura Daniela Mendoza Castro, a Web Programming student at UniEspinal. I am passionate about learning how ideas can become useful websites for other people. Each new topic motivates me to practice, face challenges, and grow through projects where I can contribute and learn from others.",
+  "about.infoTitle": "Information",
+  "about.labelLocation": "Location",
+  "about.valueLocation": "El Espinal, Tolima, Colombia",
+  "about.labelEmail": "Email",
   "about.labelLanguages": "Languages",
   "about.valueLanguages": "Spanish (native) · English (A1)",
-  "about.labelStatus":    "Availability",
-  "about.valueStatus":    "Open to internships",
+  "about.labelStatus": "Availability",
+  "about.valueStatus": "Open to internships",
   "about.interestsTitle": "Interests",
 
   "interest.1": "CODE",
@@ -114,50 +122,58 @@ const EN = {
   "interest.3": "READING",
   "interest.4": "GAMING",
 
-  "skills.title":        "Skills",
-  "skills.technical":    "Technical skills",
+  "skills.title": "Skills",
+  "skills.technical": "Technical skills",
   "skills.professional": "Professional skills",
-  "skill.support":       "User support",
-  "skill.teamwork":      "Teamwork",
-  "skill.problem":       "Problem solving",
-  "skill.english":       "Technical English",
+  "skill.support": "User support",
+  "skill.teamwork": "Teamwork",
+  "skill.problem": "Problem solving",
+  "skill.english": "Technical English",
 
-  "resume.title":      "Education and experience",
-  "resume.education":  "Education",
+  "resume.title": "Education and experience",
+  "resume.education": "Education",
   "resume.experience": "Experience",
 
   "edu.1.title": "Professional Technician in Web Programming",
-  "edu.1.text":  "I am learning to build web pages with HTML and CSS, add interactivity with JavaScript, and work with databases such as MySQL. I also practice Git and GitHub to organize changes and collaborate on projects while developing my programming and problem-solving skills.",
+  "edu.1.text": "I am learning to build web pages with HTML and CSS, add interactivity with JavaScript, and work with databases such as MySQL. I also practice Git and GitHub to organize changes and collaborate on projects while developing my programming and problem-solving skills.",
 
-  "edu.2.title": "Learning development tools",
-  "edu.2.text":  "I am improving my understanding of web page structure, visual styles, and version control. My goal is to use these tools to develop organized, easy-to-use projects.",
+  "edu.2.title": "Web development fundamentals",
+  "edu.2.institution": "UniEspinal · Academic training",
+  "edu.2.text": "During my studies, I practice building page structures with HTML, styling with CSS, and basic JavaScript concepts. I am learning to organize content, change styles, and check errors to improve how my pages look and work.",
 
-  "exp.1.title": "Building my web portfolio",
-  "exp.1.text":  "I am adapting a portfolio template with HTML, CSS, and JavaScript to present my profile, education, and skills in Spanish and English. I customize the content and skill percentages.",
+  "exp.1.title": "Customizing a web portfolio",
+  "exp.1.institution": "Personal project · Web portfolio",
+  "exp.1.text": "I adapted a template with HTML, CSS, and JavaScript to present my academic profile. I organized the information, skills, and education sections, customized the text, and adjusted the skill percentages. I also worked on content in Spanish and English.",
 
-  "exp.2.title": "Managing changes to my portfolio",
-  "exp.2.text":  "I use GitHub to edit my portfolio files and save changes. This practice helps me become familiar with version control and organizing a web project.",
+  "exp.2.title": "Updating content with GitHub",
+  "exp.2.institution": "Personal project · Web portfolio",
+  "exp.2.text": "I used GitHub to edit my portfolio's HTML and JavaScript files and save changes. I reviewed text updates and learned to keep project information current using commit messages.",
 
   "portfolio.title": "Projects",
-  "project.1.title": "[Project name]",
-  "project.1.text":  "[Technologies used]",
-  "project.2.title": "[Project name]",
-  "project.2.text":  "[Technologies used]",
-  "project.3.title": "[Project name]",
-  "project.3.text":  "[Technologies used]",
 
-  "contact.title":         "Contact",
-  "contact.intro":         "[One sentence inviting people to write to you. Example: Have a project or a vacancy? Send me a message.]",
-  "contact.emailLabel":    "Email",
-  "contact.linkedinValue": "[Your professional profile]",
+  "project.1.title": "My web portfolio",
+  "project.1.text": "A personal profile in Spanish and English presenting my education, skills, and experience. Built from a template with HTML, CSS, and JavaScript.",
+  "project.1.status": "View repository on GitHub →",
 
-  "footer.note": "[Your name] · Professional Technician in Web Programming · UniEspinal"
+  "project.2.title": "To-do list",
+  "project.2.text": "A planned practice project with HTML, CSS, and JavaScript to add tasks, mark them as completed, and delete them. My goal is to practice events and page updates.",
+  "project.2.status": "Upcoming practice project",
+
+  "project.3.title": "Student records",
+  "project.3.text": "A planned practice project to design a MySQL database and query student records. My goal is to learn how to organize and retrieve information.",
+  "project.3.status": "Upcoming practice project",
+
+  "contact.title": "Contact",
+  "contact.intro": "I am interested in learning, collaborating on projects, and finding internship opportunities. You can contact me by email or explore my work on GitHub.",
+  "contact.emailLabel": "Email",
+  "contact.repositoryLabel": "Portfolio",
+  "contact.repositoryValue": "Explore my website's code",
+
+  "footer.note": "Laura Daniela Mendoza Castro · Professional Technician in Web Programming · UniEspinal"
 };
 
 
-/* ============================================================
-   3. LANGUAGE SWITCHER
-   ============================================================ */
+/* CAMBIO DE IDIOMA */
 
 const DICCIONARIOS = { es: ES, en: EN };
 let idiomaActual = "es";
@@ -202,9 +218,7 @@ function cambiarIdioma() {
 }
 
 
-/* ============================================================
-   4. RESPONSIVE MENU
-   ============================================================ */
+/* MENÚ RESPONSIVE */
 
 let menuVisible = false;
 
@@ -220,9 +234,7 @@ function cerrarMenu() {
 }
 
 
-/* ============================================================
-   5. SKILL BARS
-   ============================================================ */
+/* BARRAS DE HABILIDADES */
 
 function animarHabilidades() {
   const barras = document.querySelectorAll(".progreso");
@@ -256,9 +268,7 @@ function animarHabilidades() {
 }
 
 
-/* ============================================================
-   6. START
-   ============================================================ */
+/* INICIO */
 
 document.addEventListener("DOMContentLoaded", () => {
   aplicarIdioma("es");
